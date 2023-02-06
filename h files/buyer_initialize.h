@@ -1,0 +1,1 @@
+struct buyer* buyer_initialize(int num_b, int total, char** input,struct buyer* BUYER, char** roll_s, char** username_s);
