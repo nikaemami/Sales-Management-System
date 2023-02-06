@@ -8,6 +8,7 @@ Description of the project and desired features:
 
 At first, every new user who enters the system must register in it. This feature is for both seller and buyer roles. To register a new user, the username, password and role of this user must be entered in the form below. Usernames are unique in each role and it is not allowed to add any user with the same username and the same role.
 
+
 **signup <username> <password> <role>** 
   
 **Example: signup person 123 seller**
@@ -16,6 +17,7 @@ At first, every new user who enters the system must register in it. This feature
 
 If a user with a specific role has already registered in the system, he can log into his user account using the following command. Make sure that a user does not enter the system directly after signing up and must log in to the system. A suitable message is shown to the user after successfully entering the system. If there is no user with the entered information, you should print an appropriate error.
 
+  
 **login <username> <password> <role>**
 
 **Example: login otherPerson 231 buyer**
@@ -37,6 +39,7 @@ If the user is a seller: the list of products that he has put up for sale, which
 Every buyer user (this possibility is not available for seller users) has the right to add an amount to his account balance.
 to add For this, you must specify the desired amount in the form below.
 
+  
 **deposit <amount_of_money>**
 
 **Example: deposit 1000**
@@ -44,6 +47,7 @@ to add For this, you must specify the desired amount in the form below.
 <h2>Adding goods for sale</h2>
 
 A user who is registered as a seller in the system can place his goods for sale in the system. To do this, you must first enter your username in the form below, and then enter the product details, which include the name, unit price, and stock. 
+  
 
 **add_goods <goods_name> <goods_price> <goods_count>**
 
@@ -58,6 +62,7 @@ Vendor name، Product name، Product unit price، Product inventory
 
 Any user with the role of buyer can buy a product with the following command. In case of a successful purchase, this product must be removed from the list of products in the system (its inventory will be reduced) and added to the buyer's shopping list. Also, the cost of buying goods must be deducted from the buyer's account and transferred to the seller's account.
 
+  
 **buy <goods_name> <goods_count> <seller_username>**
 
 **Example: buy watch 1 thirdPerson**
@@ -68,6 +73,7 @@ All store information, including user and product information, must be stored in
 <h2>Delete a product</h2>
 A seller of a product can remove his product from the store with the following command. By deleting a product, all information related to it, including the points registered for that product, will be lost. 
 
+  
 **remove_goods goods_name**
 
 **Example: remove_goods watch**
@@ -78,6 +84,7 @@ A user who is registered as a seller in the system can change the price of goods
 <h2>Rating the goods</h2>
 Each user can rate only once and only to the goods he has purchased. This score must be an integer between 1 and 5.
 
+  
 **rate_goods <goods_name> <seller_username> <rating>**
 
 **Example: rate_goods watch third_person 3**
@@ -92,6 +99,7 @@ If the average score of a product that has been disabled before becomes greater 
 Each user should be able to view the information of all the salable products of the system by entering a command. This information includes the following:
 Name of the seller, Name of the product, Unit price of the product, Inventor of the product, Average points of the product
 
+  
 **Example: show_goods**
 
 </h2>Searching for goods</h2>
@@ -99,6 +107,7 @@ Users can search and view salable goods of the system based on one or more speci
 search <number_of_conditions> <goods_attribute> <attribute_value>
 Then the number of <number_of_conditions>, pairs of strings of attribute name, and attribute value are entered so that there will be two strings in each line.
 
+  
 **Example:**
 
 **search 2** 
