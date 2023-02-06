@@ -42,5 +42,21 @@ Vendor name، Product name، Product unit price، Product inventory
 
 Any user with the role of buyer can buy a product with the following command. In case of a successful purchase, this product must be removed from the list of products in the system (its inventory will be reduced) and added to the buyer's shopping list. Also, the cost of buying goods must be deducted from the buyer's account and transferred to the seller's account.
 
+<h2>Storing information in a file</h2>
+All store information, including user and product information, must be stored in one or more files and when running the program, first the previous information is read from the file and then the inputs are received in the command line.
+
+<h2>Delete a product</h2>
+A seller of a product can remove his product from the store with the following command. By deleting a product, all information related to it, including the points registered for that product, will be lost. 
+
+<h2>Changing the prices of goods</h2>
+A user who is registered as a seller in the system can change the price of goods. To do this, after logging into your user account as a seller, enter the desired command and then the name as follows. Import the product and its new price. If the desired user does not have a product with the entered name, he should encounter an error message.
+
+<h2>Rating the goods</h2>
+Each user can rate only once and only to the goods he has purchased. This score must be an integer between 1 and 5.
+
+
+
+
+
 
 
