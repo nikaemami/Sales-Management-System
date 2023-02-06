@@ -54,9 +54,17 @@ A user who is registered as a seller in the system can change the price of goods
 <h2>Rating the goods</h2>
 Each user can rate only once and only to the goods he has purchased. This score must be an integer between 1 and 5.
 
+<h2>Deactivation of low-rated goods</h2>
+If the average score of a product that belongs to a certain seller becomes less than 2 (while at least 5 buyers have rated that product), that seller can no longer sell the mentioned product and if a customer requests to buy it, the item in question should be considered non-existent.
 
+<h2>Reactivation of goods</h2>
+If the average score of a product that has been disabled before becomes greater than or equal to 2 due to the scoring of previous buyers of that product who have not yet registered their score, the product in question will return to normal and until its score is lower again.
 
+<h2>Viewing the available products</h2>
+Each user should be able to view the information of all the salable products of the system by entering a command. This information includes the following:
+Name of the seller, Name of the product, Unit price of the product, Inventor of the product, Average points of the product
 
-
-
-
+</h2>Searching for goods</h2>
+Users can search and view salable goods of the system based on one or more special features. How to enter the command is as follows:
+search <number_of_conditions> <goods_attribute> <attribute_value>
+Then the number of <number_of_conditions>, pairs of strings of attribute name, and attribute value are entered so that there will be two strings in each line.
